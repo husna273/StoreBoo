@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="@drawable/cover">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/main"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        tools:context="novelActivity">
+
+        <TextView
+            android:id="@+id/tvBukuNovel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="175dp"
+            android:text="Buku Novel "
+            android:textColor="#A4D6D2"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardshaf"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvBukuNovel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/igshaf"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/sf"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvShaf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginEnd="164dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="SHAF"
+                    android:textColor="#A3B5C0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/igshaf"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+                <TextView
+                    android:id="@+id/tvharga1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="1dp"
+                    android:text="Rp. 90.000"
+                    android:textColor="#A3B5C0"
+                    app:layout_constraintStart_toEndOf="@+id/igshaf"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescShaf" />
+
+                <TextView
+                    android:id="@+id/tvDescShaf"
+                    android:layout_width="239dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:maxLines="4"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="#A3B5C0"
+                    android:text="Novel Shaf mengisahkan tentang seorang gadis bernama Shafira. Suatu ketika, Shafira bertemu dengan seorang pria bernama Athaya Khalil Adnan. Selama ini, Shafira hidup dengan stigma bahwa profesi sekretaris hanya menjalankan tugas sebagai seorang yang akan selalu mengatakan “iya”."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/igshaf"
+                    app:layout_constraintTop_toBottomOf="@+id/tvShaf" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardspb"
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            app:layout_constraintTop_toBottomOf="@+id/cardshaf"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/igspb"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/santripilihanbunda"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvspb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginEnd="44dp"
+                    android:paddingTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Santri Pilihan Bunda"
+                    android:textColor="#A3B5C0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/igspb"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvDescSpb"
+                    android:layout_width="239dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="4"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#A3B5C0"
+                    android:text="Novel Santri Pilihan Bunda mengangkat percintaaan sebagai tema besarnya. Dengan dibalut nuansa Islami, penulis yang lebih akrab dipanggil Acha ini mampu menyuguhkan kisah cinta yang tak hanya penuh letupan-letupan emosi tapi juga sarat akan nilai-nilai kehidupan."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/igspb"
+                    app:layout_constraintTop_toBottomOf="@+id/tvspb" />
+
+                <TextView
+                    android:id="@+id/tvharga2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="1dp"
+                    android:text="Rp. 90.000"
+                    android:textColor="#A3B5C0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescSpb"
+                    app:layout_constraintStart_toEndOf="@+id/igspb"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardazzamine"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cardspb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/igazzamine"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/azzamine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvazzamine"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginEnd="120dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="Azzamine"
+                    android:textColor="#A3B5C0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/igazzamine"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescAzzamine"
+                    android:layout_width="239dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="4"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="#A3B5C0"
+                    android:text="Novel Azzamine mengisahkan tentang perjalanan cinta Azzam dan Jasmine yang bermula dari perjodohan. Azzam merupakan seoarang pria yang sholeh, baik hati, lemah lembut, dan penyabar. Sedangkan, Jasmine merupakan seorang wanita yang lumayan tomboy dan kurang sopan."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/igazzamine"
+                    app:layout_constraintTop_toBottomOf="@+id/tvazzamine" />
+
+                <TextView
+                    android:id="@+id/tvharga3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="1dp"
+                    android:text="Rp. 90.000"
+                    android:textColor="#A3B5C0"
+                    app:layout_constraintStart_toEndOf="@+id/igazzamine"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescAzzamine" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLoveAtoZ"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cardazzamine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/igLoveAtoZ"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/lovefromatoz"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvLoveAtoZ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="120dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="Love From A to Z"
+                    android:textColor="#A3B5C0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/igLoveAtoZ"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvDescLoveAtoZ"
+                    android:layout_width="239dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="4"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="#A3B5C0"
+                    android:text="Zara Nindiatama seorang anak perempuan yang lahir dikeluarga yang agamis. Akan tetapi ia memiliki penampilan yang sedikit menonjol, berbeda dengan kembarannya yaitu Fara Anindita seorang anak yang lemah lembut dan tentunya amat berbanding balik dengan Zara, namun keduanya sama sama memiliki akhlak yang baik."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/igLoveAtoZ"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLoveAtoZ" />
+
+                <TextView
+                    android:id="@+id/tvharga4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="1dp"
+                    android:text="Rp. 90.000"
+                    android:textColor="#A3B5C0"
+                    app:layout_constraintStart_toEndOf="@+id/igLoveAtoZ"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescLoveAtoZ" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLangkahKaki"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cardLoveAtoZ"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/igLangkahKaki"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/langkahkaki"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvLangkahKaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginEnd="120dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="Langkah Kaki"
+                    android:textColor="#A3B5C0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.195"
+                    app:layout_constraintStart_toEndOf="@+id/igLangkahKaki"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvDescLangkahKaki"
+                    android:layout_width="239dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="4"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="#A3B5C0"
+                    android:text="Aku tahu sejak awal jika pernikahan yang kami jalani tidak akan mudah. Aku mencintainya, tapi tidak dengannya. Ia hanya yakin, jika kelak Allah akan menumbuhkan rasa itu di hatinya untukku. Hingga sebuah kejadian tak diinginkan akibat dari kecerobohanku, membuat ia yang belum dapat mencintaiku, menjadi membenciku."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/igLangkahKaki"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLangkahKaki" />
+
+                <TextView
+                    android:id="@+id/tvharga5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="1dp"
+                    android:text="Rp. 90.000"
+                    android:textColor="#A3B5C0"
+                    app:layout_constraintStart_toEndOf="@+id/igLangkahKaki"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescLangkahKaki" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

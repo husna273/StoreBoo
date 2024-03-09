@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="@drawable/cover">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/tvSelfImprovement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="170dp"
+            android:text="Self Improvement "
+            android:textColor="#A4D6D2"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardatomichabit"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="337dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/igatomic"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/atomichabit"/>
+                <TextView
+                    android:id="@+id/tvatomichabit"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="145dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Atomic Habit"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#A3B5C0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescatomichabit"
+                    android:layout_width="430dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="-1dp"
+                    android:layout_marginStart="10dp"
+                    android:maxLength="100"
+                    android:maxLines="4"
+                    android:paddingLeft="145dp"
+                    android:text="Atomic Habits: Perubahan Kecil yang Memberikan Hasil Luar Biasa adalah buku kategori self improvement karya James Clear. Pada umumnya, perubahan-perubahan kecil seringkali terkesan tak bermakna karena tidak langsung membawa perubahan nyata pada hidup suatu manusia."
+                    android:textColor="#A3B5C0" />
+
+                <TextView
+                    android:id="@+id/tvharga6"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="40dp"
+                    android:paddingLeft="145dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Rp. 120.000"
+                    android:textColor="#A3B5C0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardInsecurity"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#000"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="338dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iginsecurity"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/insecurity"/>
+
+                <TextView
+                    android:id="@+id/tvinsecurity"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="145dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Insecurity"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#A3B5C0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescinsecurity"
+                    android:layout_width="430dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="-1dp"
+                    android:layout_marginStart="10dp"
+                    android:maxLines="4"
+                    android:paddingLeft="145dp"
+                    android:text="Insecurity is My Middle Name merupakan buku self-healing yang ditulis oleh Alvi Syahrin. Melalui buku ini akan banyak menjawab pertanyaan-pertanyaan yang selama ini bersarang di dalam kepala. Pada buku ini, penulis akan mengajak pembaca untuk berdamai dengan ‘insecurity’ yang selama ini dialami dengan cara yang positif, terus bertumbuh, terus berkembang dan menjadi versi yang lebih baik dari diri kita sebelumnya"
+                    android:textColor="#A3B5C0" />
+                <TextView
+                    android:id="@+id/tvharga7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="40dp"
+                    android:paddingLeft="155dp"
+                    android:text="Rp. 90.000"
+                    android:textColor="#A3B5C0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardfilosof"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="339dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/igfilosof"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/filosofiteras"/>
+                <TextView
+                    android:id="@+id/tvfilosofiteras"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="145dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:text="Filosofi Teras"
+                    android:textStyle="bold"
+                    android:textColor="#A3B5C0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvDescfilosofi"
+                    android:layout_width="430dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="-1dp"
+                    android:layout_marginStart="10dp"
+                    android:maxLines="4"
+                    android:paddingLeft="145dp"
+                    android:text="Buku yang pertama kali diterbitkan pada 2019 ini mengajarkan kita tentang pengendalian emosi negatif yang ada dalam diri kita. Jauh dari kesan filsafat sebagai topik berat dan mengawang-awang, Filosofi Teras justru bersifat praktis dan relevan dengan kehidupan Generasi Milenial dan Gen-Z masa kini."
+                    android:textColor="#A3B5C0" />
+                <TextView
+                    android:id="@+id/tvharga8"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="40dp"
+                    android:paddingLeft="155dp"
+                    android:text="Rp. 100.000"
+                    android:textColor="#A3B5C0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardselfhealing"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="335dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/igselfhealing"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/selfhealingwithquran"/>
+                <TextView
+                    android:id="@+id/tvSelfhealing"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="145dp"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Self Healing With Quran"
+                    android:textStyle="bold"
+                    android:textColor="#A3B5C0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvDescselfhealing"
+                    android:layout_width="430dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="-1dp"
+                    android:layout_marginStart="10dp"
+                    android:maxLines="4"
+                    android:paddingLeft="145dp"
+                    android:text="Buku Self Healing With Qur’an karya Ummu Kalsum IQT ini merangkum berbagai metode penyembuhan diri berdasarkan petunjuk yang berada di dalam Al-Qur’an. Metode penyembuhan dihadirkan dalam bentuk berbagai kisah yang berkaitan dengan berbagai kondisi pembaca."
+                    android:textColor="#A3B5C0" />
+                <TextView
+                    android:id="@+id/tvharga9"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="50dp"
+                    android:paddingLeft="155dp"
+                    android:text="Rp. 80.000"
+                    android:textColor="#A3B5C0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPsychology"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="335dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/igpsychology"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/pyschologyofmoney"/>
+
+                <TextView
+                    android:id="@+id/tvPsycology"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="145dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:text="Psycology of Money"
+                    android:textStyle="bold"
+                    android:textColor="#A3B5C0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvDescpsycology"
+                    android:layout_width="430dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="-1dp"
+                    android:layout_marginStart="10dp"
+                    android:maxLines="4"
+                    android:paddingLeft="145dp"
+                    android:text="Dalam The Psychology of Money, penulis pemenang penghargaan, Morgan Housel membagikan 19 cerita pendek yang mengeksplorasi cara-cara aneh orang berpikir tentang uang dan mengajari Anda cara memahami salah satu topik terpenting dalam hidup dengan lebih baik."
+                    android:textColor="#A3B5C0" />
+                <TextView
+                    android:id="@+id/tvharga10"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="50dp"
+                    android:paddingLeft="145dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Rp. 130.000"
+                    android:textColor="#A3B5C0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>
